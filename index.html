@@ -57,11 +57,13 @@
         <div class="small-container">
             <h2>Featured Products</h2>
             <div class="row">
+                {% for product in products %}
                 <div class="col-4">
-                     <img src="images/product1.jpg">
-                     <h4>Red Shirt</h4>
-                     <p>$50.00</p>
+                     <img src="images/{{ product.name }}.jpg">
+                     <h4>{{ product.name }}</h4>
+                     <p>{{ product.price }}</p>
                 </div>
+                {% endfor %}
             </div>
         </div>
     </body>
