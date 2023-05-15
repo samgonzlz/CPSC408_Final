@@ -3,7 +3,7 @@ import mysql.connector
 
 app = Flask(__name__)
 
-@app.route('/')
+@app.route('https://samgonzlz.github.io/CPSC408_Final/')
 def index():
     conn = mysql.connector.connect(
         host="localhost",
