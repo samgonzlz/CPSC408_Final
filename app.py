@@ -3,7 +3,7 @@ import mysql.connector
 
 app = Flask(__name__)
 
-@app.route('https://samgonzlz.github.io/CPSC408_Final/')
+@app.route('/')
 def index():
     conn = mysql.connector.connect(
         host="localhost",
@@ -28,4 +28,4 @@ def index():
     return render_template('index.html', products=result)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True, host='0.0.0.0')
