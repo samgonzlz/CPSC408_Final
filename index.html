@@ -60,7 +60,7 @@
                 {% for product in products %}
                 <div class="col-4">
                      <img src="images/{{ product.name }}.jpg">
-                     <h4>{{ product.name }}</h4>
+                     <h4>{{ product.name|lower|replace(' ', '_') }}</h4>
                      <p>{{ product.price }}</p>
                 </div>
                 {% endfor %}
