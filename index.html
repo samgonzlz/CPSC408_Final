@@ -58,19 +58,17 @@
         <div class="small-container">
             <h2>Featured Products</h2>
             <div class="row">
-                {% for product in products %}
                 <div class="col-4">
-                     <img src="images/{{ product.name }}.jpg">
-                     <h4>{{ product.name|lower|replace(' ', '_') }}</h4>
+                     <img src="images/shirt.jpg">
+                     <h4>shirt</h4>
                      <div class="rating">
                         <i class='fa fa-star"></i>
                         <i class='fa fa-star"></i>
                         <i class='fa fa-star"></i>
                         <i class='fa fa-star"></i>
                      </div>                   
-                     <p>{{ product.price }}</p>
+                     <p>$15.99</p>
                 </div>
-                {% endfor %}
             </div>
         </div>
     </body>
