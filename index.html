@@ -5,8 +5,9 @@
         <title>Online Store</title>
         <link rel="stylesheet" href="style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
     </head>
     <body> 
         <div class="header">
@@ -61,6 +62,12 @@
                 <div class="col-4">
                      <img src="images/{{ product.name }}.jpg">
                      <h4>{{ product.name|lower|replace(' ', '_') }}</h4>
+                     <div class="rating">
+                        <i class='fa fa-star"></i>
+                        <i class='fa fa-star"></i>
+                        <i class='fa fa-star"></i>
+                        <i class='fa fa-star"></i>
+                     </div>                   
                      <p>{{ product.price }}</p>
                 </div>
                 {% endfor %}
