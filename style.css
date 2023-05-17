@@ -10,6 +10,8 @@ body{
     display: flex;
     align-items: center;
     padding: 20px;
+    position: relative;
+    z-index: 999;
 }
 nav{
     flex: 1;
