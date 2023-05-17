@@ -149,7 +149,7 @@ h4{
     color: #fff;
     margin-bottom: 20px;
 }
-.footer-col-1, .footer-col-2, .footer-col-3, .footer-col-4{
+.footer-col-1, .footer-col-2, .footer-col-3{
     min-width: 250px;
     margin-bottom: 20px;
 }
@@ -164,7 +164,7 @@ h4{
     width: 180px;
     margin-bottom: 20px;
 }
-.footer-col-3, .footer-col-4{
+.footer-col-3{
     flex-basis: 12%;
     text-align: center;
 }
