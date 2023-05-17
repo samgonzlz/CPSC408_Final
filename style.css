@@ -96,6 +96,7 @@ p{
     padding: 10px;
     min-width: 200px;
     margin-bottom: 50px;
+    transition: transform 0.5s;
 }
 .col-4 img{
     width: 100%;
@@ -125,4 +126,11 @@ h4{
 }
 .col-4 p{
     font-size: 14px;
+}
+.rating .fa{
+    color: #ff523b;
+}
+
+.col-4:hover{
+    transform: translateY(-5px);
 }
