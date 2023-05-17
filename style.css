@@ -186,3 +186,8 @@ ul{
 .copyright{
     text-align: center;
 }
+.menu-icon{
+    width: 20px;
+    margin-left: 20px;
+}
+/*---------- media query for menu ----------*/
