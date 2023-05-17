@@ -191,4 +191,14 @@ ul{
     width: 28px;
     margin-left: 20px;
 }
+/*---------- media query for menu ----------*/
 
+@media only screen and (max-width: 800px){
+    
+    nav ul{
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background: #333;
+        width: 100px;
+}
