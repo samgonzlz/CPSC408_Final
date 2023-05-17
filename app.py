@@ -23,6 +23,9 @@ def index():
 
     result = cur_obj.fetchall()
 
+    for row in result:
+        print(row)
+        
     conn.close()
 
     return render_template('index.html', products=result)

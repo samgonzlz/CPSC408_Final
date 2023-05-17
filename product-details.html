@@ -33,19 +33,59 @@
                 </a> 
             </div>
         </div>
-        <div class="small-container">
-            
-            <div class="row row-2">
-                <h2>All Products</h2>
-                <select>
-                    <option>Default Sorting</option>
-                    <option>Sort by price</option>
-                    <option>Sort by rating</option>
-                    <option>Sort by name</option>
-                    <option>Sort by style</option>
-                </select>
+
+<!------------ single product details ------------>
+        <div class="small-container single-product">
+            <div class="row">
+                <div class="col-2">
+                    <img src="images/shirt.jpg" width="100%" id="ProductImg">
+
+                    <div class="small-img-row">
+                        <div class="small-img-col">
+                            <img src="images/shirt.jpg" width="100%" class="small-img">
+                        </div>
+                        <div class="small-img-col">
+                            <img src="images/shirt.jpg" width="100%" class="small-img">
+                        </div>
+                        <div class="small-img-col">
+                            <img src="images/shirt.jpg" width="100%" class="small-img">
+                        </div>
+                        <div class="small-img-col">
+                            <img src="images/shirt.jpg" width="100%" class="small-img">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <p>Home / Shirt</p>
+                    <h1>White Shirt</h1>
+                    <h4>$14.99</h4>
+                    <select>
+                        <option>Select Size</option>
+                        <option>S</option>
+                        <option>M</option>
+                        <option>L</option>
+                        <option>XL</option>
+                    </select>
+                    <input type="number" values="1">
+                    <a href="" class="btn">Add To Cart</a>
+
+                    <h3>Product Details <i class="fas fa-indent"></i></h3>
+                    <br>
+                    <p>This tells you all about the product and what the customer will want</p>
+                </div>
             </div>
-                
+        </div>
+
+<!----------title----------->
+       <div class="small-container">
+            <div class="row row-2">
+                <h2>Related Products</h2>
+                <p>View More</p>
+            </div>
+       </div>
+
+<!----------products----------->
+        <div class="small-container">                
             <div class="row">
                 <div class="col-4">
                      <img src="images/shirt.jpg">
@@ -59,14 +99,6 @@
                      </div>                   
                      <p>$15.99</p>
                 </div>
-            </div>
-
-            <div class="page-btn">
-                <span>1</span>
-                <span>2</span>
-                <span>3</span>
-                <span>4</span>
-                <span>&#8594;</span>
             </div>
         </div>
         
@@ -113,6 +145,43 @@
                     MenuItems.style.maxHeight = "0px";
                 }
             }       
+        </script>
+
+<!----------js for toggle menu---------->
+        <script>
+            var MenuItems = document.getElementById("MenuItems");
+            
+            MenuItems.style.maxHeight = "0px";
+            
+            function menutoggle(){
+                if(MenuItems.style.maxHeight == "0px")
+                {
+                    MenuItems.style.maxHeight = "200px";
+                }
+                else
+                {
+                    MenuItems.style.maxHeight = "0px";
+                }
+            }       
+        </script>
+
+<!----------js for product details---------->
+        <script>
+            var ProductImg = document.getElementByID("ProductImg");
+            var SmallImg = socument.getElementByClassName("small-img");
+
+                SmallImg[0].onclick = function(){
+                    ProductImg.src = SmallImg[0].src;
+                }
+                SmallImg[1].onclick = function(){
+                    ProductImg.src = SmallImg[0].src;
+                }
+                SmallImg[2].onclick = function(){
+                    ProductImg.src = SmallImg[0].src;
+                }
+                SmallImg[3].onclick = function(){
+                    ProductImg.src = SmallImg[0].src;
+                }
         </script>
     </body>
 </html>
