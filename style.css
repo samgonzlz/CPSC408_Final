@@ -6,6 +6,10 @@
 body{
     font-family: 'Poppins', sans-serif;
 }
+.logo {
+    position: relative;
+    z-index: 9999;
+}
 .navbar{
     display: flex;
     align-items: center;
