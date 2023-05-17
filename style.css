@@ -190,6 +190,7 @@ ul{
 .menu-icon{
     width: 28px;
     margin-left: 20px;
+    display: none;
 }
 /*---------- media query for menu ----------*/
 
@@ -210,5 +211,9 @@ ul{
     }
         nav ul li a{
             color: #fff;
+    }
+    .menu-icon{
+        display: block;
+        cursor: pointer;
     }
 }
